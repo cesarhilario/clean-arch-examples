@@ -9,7 +9,7 @@ import {
 export class ProductController {
   constructor(readonly productGateway: ProductGateway) {}
 
-  async createUser(
+  async createProduct(
     _: unknown,
     body: ProductGatewayInputDTO
   ): Promise<ProductGatewayOutputDTO | ErrorHandler | GenericError> {
